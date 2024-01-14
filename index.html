@@ -28,7 +28,14 @@
         <p class="subtitle">Shipping amazing web applications for 5 years.</p>
         <div id="hero-buttons">
           <button class="cta-button" href="#home">Hire me 🚀</button>
-          <button class="empty-button" href="#home">Projects 🎨 &#8599;</button>
+          <a href="https://github.com/walegg" target="_blank">
+            <button id="github-button">
+              GitHub<img id="github-icon" src="images/github-icon.png" />
+            </button>
+          </a>
+          <button class="empty-button" href="#portfolio">
+            Projects 🎨 &#8599;
+          </button>
         </div>
       </div>
     </section>
@@ -36,7 +43,9 @@
     <section id="portfolio">
       <h1 class="section-titles">Latest Projects</h1>
       <div class="container">
-        <div class="card">Fit Learn</div>
+        <a href="https://www.fit-learn.com" target="_blank">
+          <div class="card"></div>
+        </a>
         <div class="card">Rock&Learn</div>
         <div class="card">3</div>
         <div class="card">4</div>
@@ -44,6 +53,27 @@
     </section>
     <section id="about-me">
       <h1 class="section-titles">About me</h1>
+      <div class="about-container">
+        <article class="about-card">
+          <div class="background">
+            <img src="images/louis.jpg" alt="profile" />
+          </div>
+          <div class="about-content">
+            <h2 style="color: black">Louis Mille &#127467;&#127479;</h2>
+            <p>Freelance full-stack developer</p>
+            <p>Helping with:</p>
+            <ul class="chips">
+              <li class="chip">React.js</li>
+              <li class="chip">Node.js</li>
+              <li class="chip">MongoDB</li>
+            </ul>
+            <div class="action-buttons">
+              <a href="#book-a-meeting"> Book a meeting </a>
+              <a href="#learn-more" class="secondary"> Learn More </a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
     <section id="services">
       <h1 class="section-titles">Services</h1>
@@ -52,10 +82,12 @@
       <div id="footer-elements">
         <h1 id="footer-title" class="section-titles">Collaborate with me</h1>
         <p class="subtitle">Please contact me via email here</p>
-        <button id="send-email" class="cta-button">📩 Send email</button>
+        <a href="mailto:mille.louis1@gmail.com">
+          <button id="send-email" class="cta-button">📩 Send email</button>
+        </a>
       </div>
       <div class="social-media-buttons">
-        <a href="https://www.instagram.com/waleml/" target="_blank">
+        <!-- <a href="https://www.instagram.com/waleml/" target="_blank">
           <button class="social-media-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +106,7 @@
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
             </svg>
           </button>
-        </a>
+        </a> -->
         <a href="https://twitter.com/WaleML" target="_blank">
           <button class="social-media-button">
             <svg
