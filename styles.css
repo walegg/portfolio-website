@@ -51,6 +51,16 @@ nav li {
   margin-right: 50px;
 }
 
+p {
+  font-size: 20px;
+}
+
+#about-me-content {
+  text-align: center;
+  width: 800px;
+  margin-left: 600px;
+}
+
 #about-me {
   background-image: url(images/background-image-primary.png);
 }
@@ -303,13 +313,13 @@ nav li {
 
 /*ABOUT ME*/
 
-.about-container {
+.services-container {
   text-align: center;
   padding-top: 100px;
   padding-left: 600px;
 }
 
-.about-card {
+.services-card {
   display: flex;
   flex-wrap: wrap;
   border-radius: 24px;
@@ -321,7 +331,7 @@ nav li {
   min-height: 400px;
 }
 
-.about-card:hover {
+.services-card:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -335,7 +345,8 @@ nav li {
   object-fit: cover;
 }
 
-.about-content {
+.services-content {
+  color: black;
   flex: 3 1 350px;
   display: flex;
   flex-direction: column;
@@ -343,7 +354,7 @@ nav li {
   padding: 16px;
 }
 
-.about-content > h2 {
+.services-content > h2 {
   font-size: clamp(1.3rem, 2.5vw, 1.8rem);
   font-weight: 700;
   margin-bottom: clamp(0.35rem, 2vw, 0.55rem);
@@ -360,6 +371,7 @@ nav li {
 }
 
 .chips {
+  color: white;
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
@@ -407,9 +419,9 @@ nav li {
   max-width: 100%;
 }
 
-.action-buttons a:hover {
+/* .action-buttons a:hover {
   text-decoration: underline;
-}
+} */
 
 .action-buttons a.secondary {
   background-color: inherit;
