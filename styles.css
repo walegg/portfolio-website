@@ -16,8 +16,7 @@ a {
 body {
   background-color: var(--background);
   color: white;
-  display: grid;
-  place-items: center;
+  font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
   width: 1920px;
 }
@@ -49,12 +48,21 @@ nav li {
   background-color: #47a23e;
   height: 424px;
   width: 1920px;
+  background-image: url(images/footer-background.png);
+}
+
+#footer-title {
+  text-align: left;
+}
+
+#footer-elements {
+  padding-left: 218px;
 }
 
 #header {
-  text-align: center;
   padding-top: 50px;
   font-size: 35px;
+  padding-left: 180px;
 }
 
 #hero {
@@ -81,6 +89,10 @@ nav li {
   width: 1920px;
 }
 
+#nav-bar {
+  text-align: center;
+}
+
 #nav-cta {
   display: inline-block;
 }
@@ -90,36 +102,8 @@ nav li {
   background-image: url(images/background-image-secondary.png);
 }
 
-.gallery {
-  display: flex;
-  gap: 1rem;
-  max-width: 80rem;
-}
-
-.card {
-  position: relative;
-  left: 0px;
-  width: 6rem;
-  border-radius: 1.2rem;
-  height: 20rem;
-  overflow: hidden;
-  background-color: var(--background);
-  transition: 0.4s ease-in-out;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
-  flex: 0.25;
-}
-
-.card img {
-  position: relative;
-  height: 20rem;
-  object-fit: cover;
-}
-
-.card:hover {
-  flex: 2;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 1rem;
+#send-email {
+  font-size: 30px;
 }
 
 .cta-button {
@@ -127,12 +111,12 @@ nav li {
   background-color: #e7fe49;
   border: none;
   border-radius: 15px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 35px;
   padding: 10px;
   width: 225px;
   height: 90px;
   margin-right: 70px;
+  cursor: pointer;
 }
 
 .empty-button {
@@ -140,6 +124,7 @@ nav li {
   border: none;
   background-color: transparent;
   color: white;
+  cursor: pointer;
 }
 
 .hero-title {
