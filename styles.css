@@ -1,16 +1,22 @@
 :root {
   --background: #47a23e;
-  --background: #060d23;
   --linkedin: #0a66c2;
   --youtube: #e52d27;
   --x: #0f1419;
   --white: #fff;
+  --scrollbar-background: #313852;
+  --text: #f1f1f1;
+  --text-active: #f1f1f180;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -25,7 +31,8 @@ body {
   height: 100vh;
   width: 1920px;
   display: grid;
-  place-items: center;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
 nav ul {
@@ -128,6 +135,62 @@ nav li {
   cursor: pointer;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding: 16px;
+  max-width: 1920px;
+  overflow-x: scroll;
+  text-align: center;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  min-width: 1920px;
+  min-height: 850px;
+  color: var(--text);
+  display: flex;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 16px;
+  transition: all 0.2s;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  scroll-snap-align: start;
+}
+
+.card:nth-child(1) {
+  background-image: linear-gradient(to bottom, #9377f2, #6250d7);
+}
+
+.card:nth-child(2) {
+  background-image: linear-gradient(to bottom, #e5866c, #df795d);
+}
+
+.card:nth-child(3) {
+  background-image: linear-gradient(to bottom, #5866e4, #4d5ad9);
+}
+
+.card:nth-child(4) {
+  background-image: linear-gradient(to bottom, #97bf42, #75aa29);
+}
+
+.container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: var(--scrollbar-background);
+  border-radius: 999px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: var(--text);
+  border-radius: 999px;
+}
+
 .empty-button {
   font-size: 35px;
   border: none;
@@ -145,6 +208,7 @@ nav li {
   font-size: 95px;
   text-align: center;
   padding-top: 40px;
+  margin-bottom: 20px;
 }
 
 .social-media-buttons {
