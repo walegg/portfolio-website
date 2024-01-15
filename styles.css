@@ -22,11 +22,6 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
 body {
   background-color: var(--background);
   color: white;
@@ -39,6 +34,15 @@ body {
   place-items: center;
   height: 100vh;
 }
+
+h2 {
+  text-align: center;
+}
+
+li {
+  text-decoration: none;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -51,14 +55,25 @@ nav li {
   margin-right: 50px;
 }
 
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav button a {
+  color: black;
+  text-decoration: none;
+}
+
 p {
-  font-size: 20px;
+  text-align: center;
 }
 
 #about-me-content {
-  text-align: center;
+  padding-top: 40px;
   width: 800px;
-  margin-left: 600px;
+  margin: auto;
+  font-size: 18px;
 }
 
 #about-me {
@@ -66,6 +81,7 @@ p {
 }
 
 #contact-button {
+  color: black;
   margin-left: 1300px;
   margin-top: -60px;
   width: 200px;
@@ -176,7 +192,7 @@ p {
   overflow-x: scroll;
   text-align: center;
   scroll-snap-type: x mandatory;
-  margin-left: 200px;
+  margin: 0 auto;
 }
 
 .card {
@@ -315,11 +331,12 @@ p {
 
 .services-container {
   text-align: center;
-  padding-top: 100px;
-  padding-left: 600px;
+  width: 740px;
+  margin: auto;
 }
 
 .services-card {
+  margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
   border-radius: 24px;
